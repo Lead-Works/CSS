@@ -47,29 +47,29 @@
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
-  --background-shading: rgba(252, 252, 252, 0.3);
-  --card-shading: transparent!important;
-  --popout-shading: transparent!important;
-  --modal-shading: transparent!important;
-  --input-shading: transparent!important;
+  --background-shading: rgba(252, 252, 252, 0.3)!important;
+  --card-shading: rgba(252, 252, 252, 0.3)!important;
+  --popout-shading:rgba(252, 252, 252, 0.5)!important;
+  --modal-shading: rgba(252, 252, 252, 0.5)!important;
+  --input-shading: rgba(0, 0, 0, 0.3)!important;
   --normal-text: #36363c;
   --muted-text: #75757e;
 }
 
 /* ASH THEME */
 :is(.theme-dark, .theme-light .theme-dark) {
-  --background-shading: rgba(0, 0, 0, 0.4);
-  --card-shading: transparent!important;
-  --popout-shading: transparent!important;
-  --modal-shading: transparent!important;
-  --input-shading: transparent!important;
+  --background-shading: rgba(0, 0, 0, 0.4)!important;
+  --card-shading: rgba(0, 0, 0, 0.2)!important;
+  --popout-shading: rgba(0, 0, 0, 0.6)!important;
+  --modal-shading: rgba(0, 0, 0, 0.4)!important;
+  --input-shading: rgba(255, 255, 255, 0.05)!important;
   --normal-text: #d8d8db;
   --muted-text: #aeaeb4;
 }
 
 /* DARK THEME */
 :is(.theme-darker, .theme-light .theme-darker) {
-  --background-shading:  rgba(0, 0, 0, 0.6);
+  --background-shading:  rgba(0, 0, 0, 0.6)!important;
   --card-shading: transparent!important;
   --popout-shading: transparent!important;
   --modal-shading: transparent!important;
@@ -80,11 +80,11 @@
 
 /* ONYX THEME */
 :is(.theme-midnight, .theme-light .theme-midnight) {
-  --background-shading: rgba(0, 0, 0, 0.8);
-  --card-shading: transparent!important;
-  --popout-shading: transparent!important;
-  --modal-shading: transparent!important;
-  --input-shading: transparent!important;
+  --background-shading: rgba(0, 0, 0, 0.8)!important;
+  --card-shading: rgba(0, 0, 0, 0.3)!important;
+  --popout-shading: rgba(0, 0, 0, 0.7)!important;
+  --modal-shading: rgba(0, 0, 0, 0.5)!important;
+  --input-shading: rgba(255, 255, 255, 0.05)!important;
   --normal-text: #dcdcde;
   --muted-text: #86868e;
 }
