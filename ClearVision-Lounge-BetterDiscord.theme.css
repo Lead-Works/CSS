@@ -8,8 +8,7 @@
  * @invite dHaSxn3
  */
 /* IMPORT CSS */
-@import url("https://raw.githubusercontent.com/Lounge-Area/CSS/refs/heads/master/main.css");
-@import url("https://raw.githubusercontent.com/Lounge-Area/CSS/refs/heads/master/betterdiscord.css");
+
 @keyframes cv-channel-select{from{right:100%}to{right:0}}@keyframes cv-card-loading{0%{opacity:.66}50%{opacity:.33}100%{opacity:.66}}/*! ClearVision v7.0.0 by ClearVision Team */.info__2debe::after{content:"Lounge"!important;color:var(--text-muted);font-size:12px;line-height:1.3333333333;font-weight:400;font-family:var(--font-primary)}.visual-refresh:not(.platform-osx) .leading_c38106::before{content:"Lounge"!important;position:static;margin-left:10px;font-size:16px;font-weight:600;color:var(--text-normal);order:2;filter:drop-shadow(0 0 5px var(--hsl-main-color))}.visual-refresh:not(.platform-osx)
 /* SETTINGS */
 :root {
