@@ -14,6 +14,7 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
+  /* ACCENT COLORS */
   --main-color: #2780e6;
   --hover-color: #1e63b3;
   --success-color: #43b581;
@@ -156,13 +157,6 @@
     border-top-right-radius: var(--radius-sm)!important;
 }
 
-/* =========================
-   Benutzer-Overrides (eingefügt vom Assistant)
-   - Ziel: spezifische Klassen in #c38106 färben
-   - Hintergrund/Container transparent machen
-   - .leading_c38106::after -> "soon"
-   Hinweis: Diese Regeln nutzen gezielt !important, damit sie Theme-Variablen/weitere Regeln überschreiben.
-   ========================= */
 
 /* 1) Farbe für konkrete Elemente (Text + Icons/SVG) */
 .item__133bf.item_b3f026.selected_b3f026.themed_b3f026,
@@ -172,14 +166,14 @@
 .button__201d5 .contents__201d5,
 .leading_c38106,
 .info__c38106 {
-  color: #c38106 !important;
+  color: #2780e6 !important;
 }
 
 /* SVG path/shape fills (Avatare / Icon-Pfade) */
 .link__972a0 .linkButtonIcon__972a0 path,
 .item__133bf .icon__* path,
 .button__201d5 svg path {
-  fill: #c38106 !important;
+  fill: #2780e6 !important;
 }
 
 /* 2) Transparent machen (Buttons/Links/Items) */
