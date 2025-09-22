@@ -14,16 +14,16 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #2780e6;
-  --hover-color: #1e63b3;
-  --success-color: #43b581;
-  --danger-color: #982929;
+  --main-color: #a37a43;
+  --hover-color: #f88d00;
+  --success-color: #00f587;
+  --danger-color: #ff0000;
   /* STATUS COLORS */
-  --online-color: #43b581;
-  --idle-color: #faa61a;
-  --dnd-color: #982929;
-  --streaming-color: #593695;
-  --offline-color: #808080;
+  --online-color: #00ff00;
+  --idle-color: #ffbb00;
+  --dnd-color: #ff0000;
+  --streaming-color: #c10ae6;
+  --offline-color: #5c5959;
   /* APP BACKGROUND */
   --background-shading-percent: 100%;
   --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
@@ -154,4 +154,75 @@
 }
     border-top-left-radius: var(--radius-sm)!important;
     border-top-right-radius: var(--radius-sm)!important;
+}
+
+/* =========================
+   Benutzer-Overrides (eingefügt vom Assistant)
+   - Ziel: spezifische Klassen in #c38106 färben
+   - Hintergrund/Container transparent machen
+   - .leading_c38106::after -> "soon"
+   Hinweis: Diese Regeln nutzen gezielt !important, damit sie Theme-Variablen/weitere Regeln überschreiben.
+   ========================= */
+
+/* 1) Farbe für konkrete Elemente (Text + Icons/SVG) */
+.item__133bf.item_b3f026.selected_b3f026.themed_b3f026,
+.link__972a0,
+.link__972a0 .layout__20a53 .name__20a53,
+.button__201d5.lookFilled__201d5.colorPrimary__201d5,
+.button__201d5 .contents__201d5,
+.leading_c38106,
+.info__c38106 {
+  color: #c38106 !important;
+}
+
+/* SVG path/shape fills (Avatare / Icon-Pfade) */
+.link__972a0 .linkButtonIcon__972a0 path,
+.item__133bf .icon__* path,
+.button__201d5 svg path {
+  fill: #c38106 !important;
+}
+
+/* 2) Transparent machen (Buttons/Links/Items) */
+.item__133bf.item_b3f026.selected_b3f026.themed_b3f026 {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.link__972a0,
+.link__972a0 .layout__20a53,
+.link__972a0 .avatar__20a53,
+.link__972a0 .content__20a53,
+.button__201d5.lookFilled__201d5.colorPrimary__201d5 {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 3) Pseudo-Inhalt ersetzen: leading_c38106 ::after soll "soon" anzeigen */
+.visual-refresh:not(.platform-osx) .leading_c38106::after,
+.leading_c38106::after {
+  content: "soon" !important;
+  color: #c38106 !important;
+  opacity: 1 !important;
+  font-weight: 600 !important;
+}
+
+/* 4) Alle divs, deren Klasse mit "container" beginnt, transparent machen */
+div[class^="container"],
+div[class*=" container"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Stellen sicher, dass Inneninhalte ebenfalls keinen Hintergrund erzwingen */
+div[class^="container"] *,
+div[class*=" container"] * {
+  background: transparent !important;
+}
+
+/* 5) Leichter Fokus-Rahmen (Accessibility) */
+:focus {
+  outline: 2px solid rgba(195,129,6,0.6) !important;
+  outline-offset: 2px !important;
 }
