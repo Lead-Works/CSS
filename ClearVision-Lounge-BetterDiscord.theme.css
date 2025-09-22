@@ -157,40 +157,6 @@
     border-top-right-radius: var(--radius-sm)!important;
 }
 
-
-/* 1) Farbe für konkrete Elemente (Text + Icons/SVG) */
-.item__133bf.item_b3f026.selected_b3f026.themed_b3f026,
-.layout__20a53 .name__20a53,
-.button__201d5.lookFilled__201d5.colorPrimary__201d5,
-.button__201d5 .contents__201d5,
-.leading_c38106,
-.info__c38106 {
-  color: #2780e6 !important;
-}
-
-/* SVG path/shape fills (Avatare / Icon-Pfade) */
-.linkButtonIcon__972a0 path,
-.item__133bf .icon__* path,
-.button__201d5 svg path {
-  fill: #2780e6 !important;
-}
-
-/* 2) Transparent machen (Buttons/Links/Items) */
-.item__133bf.item_b3f026.selected_b3f026.themed_b3f026 {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-
- .layout__20a53,
- .avatar__20a53,
- .content__20a53,
-.button__201d5.lookFilled__201d5.colorPrimary__201d5 {
-  background: transparent !important;
-  border-color: transparent !important;
-  box-shadow: none !important;
-}
-
 /* 3) Pseudo-Inhalt ersetzen: leading_c38106 ::after soll "soon" anzeigen */
 .visual-refresh:not(.platform-osx) .leading_c38106::after,
 .leading_c38106::after {
@@ -198,14 +164,6 @@
   color: #2780e6 !important;
   opacity: 1 !important;
   font-weight: 540 !important;
-}
-
-/* 4) Alle divs, deren Klasse mit "container" beginnt, transparent machen */
-div[class^="container"],
-div[class*=" container"] {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
 }
 
 }
