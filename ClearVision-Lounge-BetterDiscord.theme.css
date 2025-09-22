@@ -215,14 +215,4 @@ div[class*=" container"] {
   box-shadow: none !important;
 }
 
-/* Stellen sicher, dass Inneninhalte ebenfalls keinen Hintergrund erzwingen */
-div[class^="container"] *,
-div[class*=" container"] * {
-  background: transparent !important;
-}
-
-/* 5) Leichter Fokus-Rahmen (Accessibility) */
-:focus {
-  outline: 2px solid rgba(195,129,6,0.6) !important;
-  outline-offset: 2px !important;
 }
