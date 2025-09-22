@@ -160,8 +160,7 @@
 
 /* 1) Farbe für konkrete Elemente (Text + Icons/SVG) */
 .item__133bf.item_b3f026.selected_b3f026.themed_b3f026,
-.link__972a0,
-.link__972a0 .layout__20a53 .name__20a53,
+.layout__20a53 .name__20a53,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5,
 .button__201d5 .contents__201d5,
 .leading_c38106,
@@ -170,7 +169,7 @@
 }
 
 /* SVG path/shape fills (Avatare / Icon-Pfade) */
-.link__972a0 .linkButtonIcon__972a0 path,
+.linkButtonIcon__972a0 path,
 .item__133bf .icon__* path,
 .button__201d5 svg path {
   fill: #2780e6 !important;
@@ -182,10 +181,10 @@
   box-shadow: none !important;
 }
 
-.link__972a0,
-.link__972a0 .layout__20a53,
-.link__972a0 .avatar__20a53,
-.link__972a0 .content__20a53,
+
+ .layout__20a53,
+ .avatar__20a53,
+ .content__20a53,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5 {
   background: transparent !important;
   border-color: transparent !important;
@@ -198,7 +197,7 @@
   content: "soon" !important;
   color: #2780e6 !important;
   opacity: 1 !important;
-  font-weight: 600 !important;
+  font-weight: 540 !important;
 }
 
 /* 4) Alle divs, deren Klasse mit "container" beginnt, transparent machen */
