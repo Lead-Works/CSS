@@ -196,7 +196,7 @@
 .visual-refresh:not(.platform-osx) .leading_c38106::after,
 .leading_c38106::after {
   content: "soon" !important;
-  color: #c38106 !important;
+  color: #2780e6 !important;
   opacity: 1 !important;
   font-weight: 600 !important;
 }
